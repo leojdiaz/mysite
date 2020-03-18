@@ -125,6 +125,9 @@ section
     float: none;
     display: block;
   }
+  main {
+    height: fit-content;
+  }
 }
 
 * {
@@ -186,6 +189,7 @@ i.fas.fa-home,
 i.fab.fa-java,
 i.fab.fa-js-square,
 i.fas.fa-toolbox,
+i.fas.fa-brain,
 i.far.fa-address-card {
   padding: 5px;
 }
