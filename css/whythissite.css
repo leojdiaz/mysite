@@ -1,0 +1,35 @@
+body
+{
+  background-color: #ffff;
+}
+
+section {
+  box-shadow: 10px 10px 5px grey;
+
+}
+
+section article p {
+  font-size: x-large;
+}
+
+ul{
+  font-size: x-large;
+  font-family: 'PT Sans Narrow', sans-serif;
+}
+
+
+article.volver a {
+  text-decoration: none;
+  font-family: 'Ubuntu Mono', monospace;
+}
+
+article .volver {
+  text-align: center;
+
+}
+
+article .volver a {
+  text-decoration: none;
+  font-family: 'Ubuntu Mono', monospace;
+  font-size: large;
+}
