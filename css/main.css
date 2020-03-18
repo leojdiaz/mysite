@@ -1,0 +1,222 @@
+@import url('http://fonts.googleapis.com/css?family=Inconsolata');
+@import url('http://fonts.googleapis.com/css?family=PT+Sans');
+@import url('http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700');
+@import url("http://fonts.googleapis.com/css?family=Source+Code+Pro");
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Condensed&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Roboto|Ubuntu+Mono&display=swap');
+html
+{
+  background-color: #ffff;
+  font-family: 'PT Sans', sans-serif;
+}
+body
+{
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  font-family: 'PT Sans Narrow', sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  position: relative;
+}
+
+.main-container {
+  min-height: 100vh; /* will cover the 100% of viewport */
+  overflow: hidden;
+  display: block;
+  position: relative;
+  padding-bottom: 100px; /* height of your footer */
+}
+
+main {
+  flex-direction: row;
+  padding: 2em;
+}
+
+h1
+{
+  color: #859900;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 2.8em;
+}
+h2
+{
+  color: #66C7F4;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 2.4em;
+  font-weight: 700;
+}
+h4
+{
+  color: #cb4b16;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 1.4em;
+  font-weight: 700;
+}
+
+section
+{
+  float: left;
+  width: 100%;
+}
+
+* {box-sizing: border-box;}
+
+.header {
+  overflow: hidden;
+  background-color: #EF233C;
+  padding: 20px 10px;
+
+}
+
+.header a {
+  float: right;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+  font-family: 'Source Code Pro', 'PT Sans Narrow', sans-serif;
+}
+
+.header a:hover {
+  background-color: #8C0010;
+}
+
+.header a.active {
+  background-color: #8C0010;
+}
+
+.header-left {
+  float: left;
+}
+
+.header-left a {
+  float: left;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: center;
+  }
+
+  .header-left {
+    float: none;
+  }
+}
+
+/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+  main {
+    height: fit-content;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+
+.row {margin: 0 }
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 #6C6EA0; /* this adds the "card" effect */
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+.card .container p {
+  text-align: left;
+  font-size: x-large;
+
+}
+
+.card .container .action p {
+  text-align: right;
+
+}
+
+.card .container .action p a {
+  text-decoration: none;
+  font-family: 'Ubuntu Mono', monospace;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+i.fas.fa-home,
+i.fab.fa-java,
+i.fab.fa-js-square,
+i.fas.fa-toolbox,
+i.fas.fa-brain,
+i.far.fa-address-card {
+  padding: 5px;
+}
+
+.video_background {
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: -100;
+  background-size: cover;
+}
+
+
+.site-footer
+{
+  clear: both;
+  list-style-type: none;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #EF233C;
+}
+
+main {
+  height: auto
+}
