@@ -3,7 +3,6 @@
 @import url('http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700');
 @import url("http://fonts.googleapis.com/css?family=Source+Code+Pro");
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Condensed&display=swap');
-
 @import url('https://fonts.googleapis.com/css?family=Roboto|Ubuntu+Mono&display=swap');
 html
 {
@@ -180,7 +179,7 @@ section
   font-family: 'Ubuntu Mono', monospace;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (min-width: 600px) {
   .column {
     width: 100%;
     display: block;
@@ -188,9 +187,25 @@ section
   }
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 950px) {
   .column {
     width: 50%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .column {
+    width: 25%;
     display: block;
     margin-bottom: 20px;
   }
