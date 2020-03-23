@@ -8,7 +8,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../css/normalize.css">
   <link rel="stylesheet" href="../css/main.css">
-  <link rel="stylesheet" href="../css/whythissite.css">
+  <link rel="stylesheet" href="../css/contentpages.css">
+  <link rel="stylesheet" href="../css/tools.css">
   <script src="https://kit.fontawesome.com/f65125fab7.js" crossorigin="anonymous"></script>
 
 </head>
@@ -22,45 +23,85 @@
       <div class="header-left">
         <a  href="../index.html">Inicio <i class="fas fa-home"></i></a>
         <a class="active" href="devtools.html">Dev Tools <i class="fas fa-toolbox"></i></a>
-        <a href="#">Java <i class="fab fa-java"></i></a>
-        <a href="#">Javascript <i class="fab fa-js-square"></i></i></a>
+        <a href="./underconstruction.html">Lógica<i class="fas fa-brain"></i></a>
+        <a href="./underconstruction.html">Java <i class="fab fa-java"></i></a>
+        <a href="./underconstruction.html">Javascript <i class="fab fa-js-square"></i></i></a>
         <a href="aboutme.html">Quien soy <i class="far fa-address-card"></i></a>
+      </div>
+      <div class="only-icons">
+        <a  href="../index.html"><i class="fas fa-home"></i></a>
+        <a class="active" href="devtools.html"><i class="fas fa-toolbox"></i></a>
+        <a href="./underconstruction.html"><i class="fas fa-brain"></i></a>
+        <a href="./underconstruction.html"><i class="fab fa-java"></i></a>
+        <a href="./underconstruction.html"><i class="fab fa-js-square"></i></a>
+        <a href="aboutme.html"><i class="far fa-address-card"></i></a>
       </div>
     </div>
 
   </nav>
 </header>
 <main>
-  <h1>Hola</h1>
-  <section>
-    <h2>Un poco sobre mi</h2>
+  <h1>Dev Tools</h1>
+  <section class="git">
+    <h2>Git <i class="fab fa-git-square"></i></h2>
     <article>
-      <p>Hola! Soy Leonardo Javier Díaz, de Córdoba Argentina. Nací en 1987, estoy en pareja hace 11 años y soy papa de un León. Estudie Ingeniería
-        en Sistemas sin lograr terminar la carrera aun (pasaron cosas).
-      Me dedico al software desde hace 12 años, pasando por varias empresas, algunas grandes y otras no tanto.</p>
-      <p>Trabaje con las siguientes tecnologías:</p>
-      <ul>
-        <li>Oracle PL SQL</li>
-        <li>Oracle Forms</li>
-        <li>T-SQL</li>
-        <li>Pro-C</li>
-        <li>Java</li>
-        <li>Android</li>
-        <li>NodeJs</li>
-      </ul>
-      <p>Actualmente me estoy capacitando para sumar a mi stack Angular.</p>
-      <p>En mis ratos libres juego video juegos, fan de la Xbox y de Blizzard.</p>
-      <p>Tambien tengo un blog
-        <a href="https://www.cheleo.com.ar " target="_black ">Cheleo.com.ar</a>
-      </p>
-      <p class="volver"><a href="../index.html">Volver</a></p>
+      <h3>¿Que es git?</h3>
+      <p>Segun Wikipedia Git (pronunciado "guit") es un software de control de versiones diseñado por Linus Torvalds, pensando en la eficiencia y la confiabilidad del mantenimiento de versiones de aplicaciones cuando éstas tienen un gran número de
+        archivos de código fuente. Su propósito es llevar registro de los cambios en archivos de computadora y coordinar el trabajo que varias personas realizan sobre archivos compartidos.</p>
+      <p>Luego de esta definición formal de git, les doy mi punto de vista de para que sirve. Git permite el traking de nuestro proyecto. Seguir paso a paso como fue evolucionado y tener registro de ello, ademas facilita el trabajo en equipo.</p>
+      <p>Es aconsejable que todo proyecto que hagan, por mas chico que les parezca, lo hagan sobre un repo Git, muchas empresas suelen pedir links nuestros repos para ver en que trabajamos, es buena carta de presentación.</p>
+      <p>Para instalar Git en Widows solo tienen que ir a la web de Git y
+        <a href="https://git-scm.com/download/win" target="_black">descargar el instalador.</a></p>
+      <p>Para instalar Git en Ubuntu tienen que seguir los siguientes pasos en la consola:</p>
+      <figure class="git-image">
+        <img class="git-image" src="../img/gitinstall.png">
+        <figcaption>Comandos para instalar git, captura generada con <a href="https://carbon.now.sh/" target="_black">Carbon</a></figcaption>
+      </figure>
+      <figure class="git-console">
+        <img src="../img/consolagit.png">
+        <figcaption>Git en accion en la terminal de Ubuntu</figcaption>
+      </figure>
     </article>
   </section>
-
+  <section class="repos">
+    <h2>¿Donde subir mi codigo?<i class="fas fa-code-branch"></i></h2>
+    <article>
+      <h3>Gitlab<i class="fab fa-gitlab"> </i>Github<i class="fab fa-github"></i> Bitbucket<i class="fab fa-bitbucket"></i></h3>
+      <p><a href="https://about.gitlab.com/" target="_blank">Gitlab,</a>
+        <a href="https://github.com/" target="_blank"> Github,</a>
+        <a href="https://bitbucket.org/" target="_blank"> Bitbucket</a>
+        ofrecen de manera gratuita poder subir numero ilimitado de proyectos de forma pública o privada.</p>
+    </article>
+  </section>
+  <section class="gitkraken">
+    <h2>Gitkraken <i class="fab fa-gitkraken "></i></h2>
+    <article>
+      <h3>¿Que es Gitkraken?</h3>
+      <p><a href="https://www.gitkraken.com/" target="_blank">Gitkraken</a> es una tool visual que permite interactuar con nuestro repo de código de manera mas intuitiva, aunque simpre es aconsejable tener a mano la consola.</p>
+      <p>La versión gratuita de gitkraken solo permite interactuar con repositorios públicos. Pueden ver la comparativa entre los planes<a href="https://www.gitkraken.com/pricing#plan-comparison" target="_blank"> aquí</a>.</p>
+    </article>
+  </section>
+  <section class="common">
+    <h2>¿Como inicializar mi repo de forma local?</h2>
+    <article>
+      <h3>Comenzando a usar git!</h3>
+      <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+    </article>
+  </section>
 </main>
 <footer class="site-footer">
-  <p>FOOTER</p>
-  <p>FOOTER</p>
+  <ul>
+    <li><a href="https://twitter.com/leo4jdiaz" target="_blank">Twitter <i class="fab fa-twitter-square"></i></a>
+    </li>
+    <li><a href="https://www.linkedin.com/in/leonardojdiaz/" target="_blank">Linkedin <i class="fab fa-linkedin"></i></a></li>
+    <li><a href="https://join.slack.com/t/eventostechargentina/shared_invite/enQtODM1Mjk0ODI3Mzc3LWE2N2U4ZDc3OWIwNTFhNjY3MDhmMjg4MzkxNWUzYjc5ZGEzZTU2OGUyNzEyOWFhZGM1NjM2ZWM2YTNhMmY0ZjM " target="_blank">Slack <i class="fab fa-slack-hash"></i></a></li>
+    <li><a href="https://gitlab.com/leojdiaz " target="_blank">Gitlab <i class="fab fa-gitlab"></i></a></li>
+  </ul>
+  <p>
+    Sitio web realizado por Leonardo Diaz
+  </p>
+
 </footer>
 </body>
 

@@ -1,0 +1,65 @@
+section {
+  margin-top: 50px;
+}
+
+.git {
+  background-image: url('../img/git_destacada-1024x426.png');
+}
+
+.gitkraken {
+  background-image: url('../img/1_ooLsaroMXlzi0OwBYCiFSA.jpeg');
+}
+
+.repos {
+  background-image: url('../img/cat-07-30-18.jpg');
+}
+
+.git article,
+.gitkraken article {
+  background-color: #ffffff;
+  opacity: 0.8;
+}
+
+.repos article {
+  background-color: lightblue;
+  opacity: 0.8;
+}
+
+.repos article p {
+  color: black;
+  margin-right: 20px;
+}
+
+.git article p,
+.gitkraken article p {
+  color: #002b36;
+  margin-right: 20px;
+}
+
+section {
+  float: left;
+  width: 95%;
+}
+
+.git-image {
+  text-align: center;
+}
+
+.git-image img {
+  width: 300px;
+}
+
+.git-console {
+  text-align: center;
+}
+
+.git-console img {
+  width: 75%;
+}
+
+i.fab.fa-gitlab {
+  display: inline;
+}
+.repos h3 {
+  color: #cb4b16;
+}
